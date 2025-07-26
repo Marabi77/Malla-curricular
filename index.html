@@ -1,1 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Malla Curricular Interactiva</title>
+    <!-- Enlace a la hoja de estilos CSS -->
+    <link rel="stylesheet" href="estilos.css">
+    <!-- Enlace a Google Fonts para una tipografía estética -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
 
+    <header class="main-header">
+        <h1>Malla Curricular de Medicina</h1>
+        <p>Haz clic en un ramo para marcarlo como aprobado. Tu progreso se guardará automáticamente.</p>
+        <button id="reset-button">Reiniciar Progreso</button>
+    </header>
+
+    <!-- Contenedor principal donde se generará la malla curricular -->
+    <main id="malla-container" class="malla-container"></main>
+
+    <!-- Modal para mostrar los requisitos faltantes (inicialmente oculto) -->
+    <div id="modal-requisitos" class="modal-overlay">
+        <div class="modal-content">
+            <span id="close-modal" class="close-button">&times;</span>
+            <h2>Ramo Bloqueado</h2>
+            <p>Para poder cursar este ramo, primero necesitas aprobar:</p>
+            <ul id="lista-requisitos">
+                <!-- Los requisitos faltantes se insertarán aquí con JavaScript -->
+            </ul>
+        </div>
+    </div>
+
+    <!-- Enlace al archivo JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
